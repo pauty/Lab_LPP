@@ -1,0 +1,23 @@
+@ this is a comment @
+
+prog -> stmt
+
+@ this is another one @
+
+stmt -> if expr then block
+	| while expr do block
+@ one more pls @
+	| expr ;
+expr -> term => id
+@ a great comment 
+  on more lines! @ 
+    | isZero? term
+    | not expr
+    |  ++ id
+    | -- id
+term -> id
+    | const
+block -> stmt
+     |  { stmts }
+stmts -> stmt stmts
+       |
